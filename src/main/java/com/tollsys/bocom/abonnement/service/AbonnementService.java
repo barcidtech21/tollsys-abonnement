@@ -126,6 +126,10 @@ public class AbonnementService {
             }
         });
 
+        sftpService.uploadFile(auditFile,sftpMinfiDir);
+        sftpService.uploadFile(auditFile,sftpErocamDir);
+
+
         FileUtils.writeStringToFile(auditFile, sb.toString() + System.lineSeparator(), StandardCharsets.UTF_8, true);
 
 

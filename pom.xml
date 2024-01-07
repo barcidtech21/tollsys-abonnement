@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.tollsys.bovom.abonnement</groupId>
     <artifactId>abonnement</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>abonnement</name>
     <description>TollSYS endpoint pour la gestion des abonnements</description>
 
