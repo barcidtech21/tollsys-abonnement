@@ -1,0 +1,15 @@
+<service>
+    <id>abonnement_service</id>
+    <name>Abonnement Service</name>
+    <description>Service ABONNEMENT</description>
+	<env name="BASE_DIR" value="%ABONNEMENT_DIR%"/>
+	<executable>java</executable>
+    <arguments>-jar "%ABONNEMENT_DIR%\lib\abonnement.jar" --spring.config.location=%ABONNEMENT_DIR%\conf\application.properties</arguments>
+    <logmode>roll</logmode>
+	<startmode>Automatic</startmode>
+	<logpath>%ABONNEMENT_DIR%\logs\service-windows</logpath>
+	<log mode="roll-by-size">
+		<sizeThreshold>1024</sizeThreshold>
+		<keepFiles>10</keepFiles>
+	</log>
+</service>
